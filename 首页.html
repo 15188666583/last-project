@@ -10,33 +10,99 @@
     
     <style>
         *{
-            padding: 0;
-            margin: 0;
+            padding: 0px;
+            margin: 0px;
             
         }
+        body{
+            
+           height: 1000px;
+            overflow: hidden;
+          
+        }
         .cl1{
-          height: 1000px;
+            
             width: 100%;
-           
-/*
-          background-image: url(img/%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC%E9%A6%96%E9%A1%B5.jpg);
-           
-*/
+            height: 100%;
+            
         }
     
+        .beijing1{
+            width: 100%;position: absolute;z-index: -1;
+        }
+         .beijing2{
+            width: 100%;display: none;position: absolute;z-index: -1;
+        }
+         .daohang1{
+            top: 40px;
+        }
+         .biaoti1{
+                width: 70%;
+                height: 50%;
+                text-align: center;
+            }
+         
+        .biaoti1 h1{
+            position: relative;
+            top: 200px;
+            font-size:7vw;
+            line-height: 120%;
+            font-family: fantasy;
+        }
         
-        
-        
+
+
+/*        媒体查询*/
+        @media screen and (max-width:700px){
+            
+            .daohang1{
+                top: 0px;
+            }
+             .daohang ul li{
+               margin: 50px;
+            }
+            .beijing1{
+                
+                display: none;
+                
+            }
+             .beijing2{
+            display: block;height: 80%;bottom: 0px;
+            }
+              .biaoti1{
+                  width: 100%;
+                  height: 100%;
+                 text-align: center;
+               
+                
+            }
+            
+      .biaoti1 h1{
+            position: relative;
+            top: 0px;
+            font-size:11vw;
+            line-height: 150%;
+            font-family: fantasy;
+        }
+        }
+
+        /*        媒体查询*/
+           
+       
     </style>
     
 </head>
 <body>
 <!--整体界面-->
 <div class="cl1">
+<!--背景图片-->
+<div>
+<img class="beijing1" src="img/%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC%E9%A6%96%E9%A1%B5.jpg"; alt="" >
+<img class="beijing2" src="img/%E6%89%8B%E6%9C%BA%E8%83%8C%E6%99%AF.jpg"; alt="" >
+</div>
 
-<img src="img/%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC%E9%A6%96%E9%A1%B5.jpg"; alt="" style="width: 100%;position: fixed;">
  <!--顶部导航-->
-   <div class="navbar navbar-inverse" role="navigation" id="menu-nav" style="">
+   <div class="navbar navbar-inverse daohang1" role="navigation" id="menu-nav" >
        <div class="container">
            <div class="navbar-header">
                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -45,11 +111,11 @@
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                </button>
-               <a href="#" class="navbar-brand active">动漫展示</a>
+               <a href="#" style="color: white;" class="navbar-brand ">动漫展示</a>
            </div>
            <div class="navbar-collapse collapse">
-             <ul class="nav navbar-nav">
-                 <li ><a href="#ad-carousel">漫展首页</a></li>
+             <ul class="nav navbar-nav " >
+                 <li class="active"><a href="#ad-carousel active">漫展首页</a></li>
                  
                  <li class="dropdown">
                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">动漫推荐<span class="caret"></span></a>
@@ -67,11 +133,12 @@
            </div>
        </div>
    </div>
+<!--    标题-->
+   <div class="biaoti1">
+    <h1 style=""><a style="color: black;text-decoration: none;" href="#">Mainstream<br>Anime</a></h1>
     
-    
-    
-    
-    
+    </div>
+
     
     
     
