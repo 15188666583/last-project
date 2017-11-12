@@ -20,8 +20,81 @@
             overflow: hidden;
           
         }
-        .cl1{
+/*        旋转图*/
+.Container{ 
+            position: fixed;
+            margin: 15% auto;  
+            width: 20%;  
+            height: 40%;  
+            position: relative;  
+            perspective: 1000px;  
+/*            background-color: aqua;*/
+        }  
+        #carousel{  
+            position: fixed;
+            left: 70px;
+            top: 15%;
+            width: 60%;  
+            height: 60%;  
+            transform-style:preserve-3d;  
+            animation: rotation 20s infinite linear; 
+            border: 10px solid black;
+            border-radius: 50%;
+            background-color: black;
+           
+        }  
+        #carousel:hover{  
+            animation-play-state: paused;  
             
+        }  
+        #carousel figure{  
+           
+            position: absolute;  
+            width: 100%;  
+          
+        }  
+        .img1{  
+            
+            cursor: pointer;  
+            transition:all 0.3s ease 0s;  
+            width: 150%;  
+            height: 150%;  
+            border: 2px solid black;
+            border-radius: 10%;
+        }  
+        .img1:hover{  
+         
+            transform: scale(1.5,1.5);  
+        }  
+        figure{
+            transform: scale(2,2); 
+            
+        }
+        .erweima:hover{
+            
+            transform: scale(2,2);  
+            
+        }
+        #carousel figure:nth-child(1) {transform: rotateY(0deg) translateZ(300px);}  
+        #carousel figure:nth-child(2) { transform: rotateY(90deg) translateZ(300px);}  
+        #carousel figure:nth-child(3) { transform: rotateY(180deg) translateZ(300px);}  
+        #carousel figure:nth-child(4) { transform: rotateY(270deg) translateZ(300px);}  
+        #carousel figure:nth-child(5) { transform: rotateY(360deg) translateZ(300px);}  
+      
+   @keyframes rotation{  
+            from{  
+                transform: rotateY(0deg);  
+            }  
+            to{  
+                transform: rotateY(360deg);  
+            }  
+        }  
+        
+        
+        
+        /*旋转图*/
+        .cl1{
+            position: absolute;
             width: 100%;
             height: 100%;
             
@@ -42,13 +115,7 @@
                 text-align: center;
             }
          
-        .biaoti1 h1{
-            position: relative;
-            top: 200px;
-            font-size:7vw;
-            line-height: 120%;
-            font-family: fantasy;
-        }
+      
         
 
 
@@ -77,13 +144,7 @@
                 
             }
             
-      .biaoti1 h1{
-            position: relative;
-            top: 0px;
-            font-size:11vw;
-            line-height: 150%;
-            font-family: fantasy;
-        }
+    
         }
 
         /*        媒体查询*/
@@ -111,20 +172,20 @@
                    <span class="icon-bar"></span>
                    <span class="icon-bar"></span>
                </button>
-               <a href="#" style="color: white;" class="navbar-brand ">动漫专区</a>
+               <a href="%E9%A6%96%E9%A1%B5.html" style="color: white;" class="navbar-brand ">动漫专区</a>
            </div>
            <div class="navbar-collapse collapse">
              <ul class="nav navbar-nav " >
-                 <li class="active"><a href="#ad-carousel active">漫展首页</a></li>
+                 <li ><a href="%E9%A6%96%E9%A1%B5.html">漫展首页</a></li>
                  
                  <li class="dropdown">
-                     <a href="" class="dropdown-toggle" data-toggle="dropdown">动漫推荐<span class="caret"></span></a>
+                     <a href=""  class="dropdown-toggle active" data-toggle="dropdown">动漫推荐<span class="caret"></span></a>
                      <ul class="dropdown-menu" role="menu">
                          <li><a href="#" data-tab="tab-chrome">东京食尸鬼</a></li>
                          <li><a href="#feature-tab" data-tab="tab-firefox">进击的巨人</a></li>
-                         <li><a href="#feature-tab" data-tab="tab-safari">我的英雄学院</a></li>
+                         <li><a href="#feature-tab" data-tab="tab-safari">刀剑神域</a></li>
                          <li><a href="#feature-tab" data-tab="tab-opera">全职高手</a></li>
-                         <li><a href="#feature-tab" data-tab="tab-ie">从零开始的异世界</a></li>
+                         
                      </ul>
                  </li>
                  <li><a href="%E4%BA%A4%E6%B5%81%E5%8C%BA.html">交流区</a></li>
@@ -133,28 +194,27 @@
            </div>
        </div>
    </div>
-<!--    标题-->
-   <div class="biaoti1">
-    <h1 style=""><a style="color: black;text-decoration: none;" href="#">Mainstream<br>Anime</a></h1>
-     
-    </div>
- <div class="geren" style="background: url(%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/3.png) no-repeat ;height: 500px;width: 700px;margin: 0px auto;">
+<!--    旋转图-->
+  
+    <div class="" style="height: 100%;width: 100%;">
 
-<div style="background: url(%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/%E7%9B%B8%E6%A1%86.jpg) no-repeat -100px;;height: 380px;width: 670px;overflow: hidden;position: relative;left: 10px;top: 10px;">
+<div style="height: 100%;width:100%;">
    <br><br><br>
     <div class="Container">  
         <div id="carousel">  
-            <figure><img class="img1" src="%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/%E7%89%B9%E6%AE%8A%E8%B4%A1%E7%8C%AE%E5%A5%96.jpg" alt=""></figure>  
-            <figure><img class="img1" src="%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/%E4%B8%89%E7%AD%89%E5%A5%96.jpg" alt=""></figure>  
-            <figure><img class="img1" src="%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/%E4%BC%98%E7%A7%80%E5%9B%A2%E5%91%98.jpg" alt=""></figure>  
-            <figure><img class="img1" src="%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/%E7%89%B9%E6%AE%8A%E8%B4%A1%E7%8C%AE%E5%A5%96.jpg" alt=""></figure>  
-            <figure><img class="img1" src="%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/%E7%A7%91%E6%8A%80%E5%88%9B%E6%96%B0.jpg" alt=""></figure>  
-            <figure><img class="img1" src="%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/%E4%B8%80%E7%AD%89%E5%A5%96.jpg" alt=""></figure>  
+            <figure><img class="img1" src="img/%E4%B8%80%E7%AD%89%E5%A5%96.jpg" alt=""></figure>  
+            <figure><img class="img1" src="img/%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F.jpg" alt=""></figure>  
+            <figure><img class="img1" src="img/%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B1.jpg" alt=""></figure>  
+            <figure><img class="img1" src="img/%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC.jpg" alt=""></figure>  
+          
         </div>  
     </div>   
     
 </div>
 </div>
+     
+   
+ 
    
     
 
