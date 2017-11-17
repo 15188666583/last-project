@@ -27,27 +27,27 @@
         }
     
         .beijing1{
-            width: 100%;position: absolute;z-index: -1;
+            width: 100%;position: fixed;z-index: -1;
         }
          .beijing2{
-            width: 100%;display: none;position: absolute;z-index: -1;
+            width: 100%;display: none;position: fixed;z-index: -1;
         }
          .daohang1{
             top: 40px;
         }
          .biaoti1{
-                width: 70%;
+                width: 60%;
                 height: 50%;
                 text-align: center;
             }
          
         .biaoti1 h1{
             position: relative;
-            top: 200px;
-            font-size:7vw;
+            top: 100px;
+            font-size:5vw;
             line-height: 120%;
             font-family: fantasy;
-            text-shadow: 20px 20px red;
+            text-shadow: 10px 10px red;
         }
        h1:hover{
             
@@ -60,25 +60,35 @@
             left: 40%;
             top:5px;
         }
-/*
-          .denglu{
-             position: absolute;
-            left: 10%;
-            
+        .shipin{
+            display: block;
+            position:relative;
+            top: 150px;
+            left: 50px;
+            margin: 0 auto;
         }
-          .zhuce{
-             position: absolute;
-             left: 10%;
-            
+        .vid1{
+            width: 50%;
         }
-*/
 
 /*        媒体查询*/
         @media screen and (max-width:750px){
+            
+            
+             .vid1{
+            width: 80%;
+        }
+
             .sousuo{
             
             position: absolute;
             left:0px;
+        }
+              .shipin{
+            display: block;
+            position:relative;
+            top: 0px;
+            margin: 0 auto;
         }
             .denglu{
              position: absolute;
@@ -184,15 +194,16 @@
    </div>
 <!--    标题-->
    <div class="biaoti1">
-    <h1 ><a style="color: black;text-decoration: none;" href="#">Mainstream<br>Anime</a></h1>
+    <h1 ><a style="color: black;text-decoration: none;" href="#mv">Mainstream<br>Anime</a></h1>
      
     </div>
 
    <div class="row">
-       <div class="col-md-12">
-        <video src="movie.ogg" controls="controls">
+       <div class="shipin col-md-12">
+        <video class="vid1"   style=""src="mv/%E3%80%90%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC%E5%89%A7%E9%80%8F%E7%87%83%E5%90%91MAD%E3%80%91%E4%BD%A0%E4%BB%AC%E8%A6%81%E7%9A%84%E9%87%91%E6%9C%A8%E7%99%BD%E5%8F%91%E8%BF%9B%E5%8C%96%E5%8F%B2%EF%BC%88%E9%87%8D%E4%BC%A0%E9%AB%98%E7%94%BB%E8%B4%A8%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89%20-%201.1(Av1508282,P1).mp4" controls="controls">
+        
 </video>
-           
+        <span id="mv"> &nbsp;</span>   
            
        </div>
        
