@@ -2,9 +2,460 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <title>全职高手</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        body{
+            
+         
+          
+        }
+        .cl1{
+            
+            width: 100%;
+            height: 100%;
+            
+        }
+    
+        .beijing1{
+            width: 100%;position: fixed;z-index: -1;
+        }
+         .beijing2{
+            width: 100%;display: none;position: absolute;z-index: -1;
+        }
+         .daohang1{
+            top: 40px;
+        }
+      
+             .sousuo{
+            
+            position: absolute;
+            left: 10%;
+            top:5px;
+        }
+        .zhu
+        {    
+            width: 75%;
+            height: 770%;
+            background-color:rgba(215,215,215,0.9);
+            margin: 0px auto;
+            
+     
+        }
+        .lunbo{
+            border-radius: 2%;
+            width: 45%;
+            background-color: azure;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .zhu ul{
+            list-style:inside;
+            color: black;font-weight: bold;
+        }
+        .zhu ul li{
+            text-indent: 2em;
+            line-height: 250%;
+        }
+        .zimg{
+            
+          width: 100%;border-radius:5%;
+     
+            
+        }
+        .zp{
+            margin: 1% auto;
+            text-align: center;
+            font-size: 3vw;
+            background-image: linear-gradient(to right, #dff,#acc2d9,#dff);
+            width: 90%;
+            height: 2px;
+            border-radius: 50%;
+            color: rebeccapurple;
+            font-family: sans-serif;
+              box-shadow:0 0 10px 10px rgba(255,255,255,0.5) inset;
+        }
+        .mo ul li{
+            float: left;
+            
+            
+        }
+        
+/*        媒体查询*/
+        @media screen and (max-width:700px){
+            .sousuo{
+            
+            position: absolute;
+            left: 0px;
+        }
+           
+            .daohang1{
+                top: 0px;
+            }
+             .daohang ul li{
+               margin: 50px;
+            }
+            .beijing1{
+                
+                display: none;
+                
+            }
+             .beijing2{
+            display: block;height: 80%;bottom: 0px;position: fixed;
+            }
+             
+               
+                
+            }
+            
+     
+        
+
+        /*        媒体查询*/
+           
+       
+    </style>
+    
 </head>
 <body>
+<!--整体界面-->
+<div class="cl1">
+<!--背景图片-->
+<div>
+<img class="beijing1" src="img/138-140911113023.jpg"; alt="" >
+<img class="beijing2" src="img/%E6%89%8B%E6%9C%BA%E8%83%8C%E6%99%AF.jpg"; alt="" >
+</div>
+
+ <!--顶部导航-->
+   <div class="navbar navbar-inverse daohang1" role="navigation" id="menu-nav" >
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a href="%E9%A6%96%E9%A1%B5.html" style="color: white;" class="navbar-brand ">动漫专区</a>
+           </div>
+           <div class="navbar-collapse collapse">
+             <ul class="nav navbar-nav " >
+                 <li ><a href="%E9%A6%96%E9%A1%B5.html">漫展首页</a></li>
+                 
+                 <li class="dropdown">
+                   <a href="" class="dropdown-toggle" data-toggle="dropdown">动漫推荐<span class="caret"></span></a>
+                     <ul class="dropdown-menu" role="menu">
+                         <li><a href="%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC.html" data-tab="tab-chrome">东京食尸鬼</a></li>
+                   
+                         <li><a href="%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F.html" data-tab="tab-safari">刀剑神域</a></li>
+                         <li><a href="%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B.html" data-tab="tab-opera">全职高手</a></li>
+                               <li><a href="%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA.html" data-tab="tab-firefox">进击的巨人</a></li>
+                         
+                     </ul>
+                 </li>
+               <li ><a href="%E8%B5%84%E8%AE%AF%E5%8C%BA.html">资讯区</a></li>
+                 <li><a href="%E8%81%94%E7%B3%BB%E6%88%91.html">联系我</a></li>
+                 <li class="denglu"><a href="%E7%99%BB%E9%99%86.html">登陆</a></li>
+                 <li class="zhuce"><a href="%E6%B3%A8%E5%86%8C.html">注册</a></li>
+                 <li class="sousuo">  
+             <form class="form-inline" action="." method="POST">
+						
+						<div class="form-group ">
+							<input style="height: 40px;line-height: 40px;" type="email" name="email" placeholder="请输入搜索内容" class="form-control input-lg" required="" value="">
+							<button type="submit" class="btn btn-primary btn-lg" style="background-color: #222222;border: none;">搜索</button>
+						</div>
+						
+					</form>
+            </li>
+                 
+             </ul>
+           </div>
+       </div>
+   </div>
+<!--    模块-->
+<br><br><br>
+ <div class=" zhu">
+ <br>
+ <p class="zp">-オーディナル</p><br><br> <br> <br> <br> <br>
+<!--     轮播图-->
+    <div class="row">
+     <div class=" col-md-6">
+         <ul>
+            <h3 style="text-align: center;">简介</h3>
+             <li>
+                 《刀剑神域》是轻小说家川原砾著作，插画家abec负责插画，电击文库所属的轻小说。本作繁体中文版由台湾角川发行，简体中文版由天闻角川发行。
+本作原本是川原砾为了参加2002年的电击游戏小说大奖而写的长篇小说，但由于文章过长而无法参加后，改为在网络上以“九里史生”的名义连载。连载时间是2002年11月～2008年7月，2004年开始受到大量关注。
+             </li>
+         </ul>
+     </div>
+     <br>
+      <div id="carousel-example-generic" class="carousel slide lunbo col-md-6" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+          
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item">
+            <a href="#"><img  alt="" src="img/%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F1.jpg" data-holder-rendered="true"></a>
+          </div>
+          <div class="item">
+            <a href="#"><img  alt="" src="img/%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F2.jpg" data-holder-rendered="true"></a>
+          </div>
+           <div class="item">
+            <a href="#"><img  alt="" src="img/%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F3.jpg" data-holder-rendered="true"></a>
+          </div>
+            <div class="item">
+            <a href="#"><img  alt="" src="img/%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F4.jpg" data-holder-rendered="true"></a>
+          </div>
+          <div class="item active">
+            <a href="#"><img  alt="" src="img/%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F5.jpg" data-holder-rendered="true"></a>
+          </div>
+       
+          
+          
+        </div>
+<!--
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        
+        </a>
+-->
+      </div>
+      </div>
+     <!--     轮播图-->
+     <br>
+          <div class="row">
+        <div class="col-md-7">
+           <br>
+           <br>
+            <ul style="width: 70%;margin: 0 auto;">
+               <p class="zp"></p>
+               <li>动画作品</li>
+                <li>
+                   《刀剑神域》
+                   刀剑神域动画第一期，全25话，小说第1-4卷的动画化，已完结。
+                </li>
+                <li>《刀剑神域Extra Edition》
+年末特番，2013年12月31日放送，小说4-5卷之间的故事，原创剧情，时长约2个小时。</li>
+                <li>《刀剑神域Ⅱ》
+刀剑神域动画第二期，全24话，小说第5-7卷的动画化，已完结。</li>
+                <li>《刀剑神域：序列之争》
+剧场版，已经在2017年2月18日在全日本放送，并已确定会在中国大陆放送！小说第8-9卷之间的故事，为川原砾原创剧情！</li>
+               
+            </ul>
+            
+        </div>
+          <div class="col-md-5" >
+                   <br><br><br>
+                    <img style="width: 95%;height: 50%;border-radius: 5%;" src="img/%E5%BA%8F%E5%88%97%E4%B9%8B%E4%BA%89.jpg" alt="">
+   
+        </div>
+    </div>
+  
     
+<!--     刀剑神域-->
+<div class="row">
+    
+    <div class="col-md-12">
+        <span>
+       
+            
+        </span>
+        <br><br>
+        <div class="row">
+        <div class="col-md-7">
+           <br>
+           <br>
+            <ul style="width: 70%;margin: 0 auto;">
+              
+               <li>主角介绍：</li>
+                <li>
+                    桐人/桐谷和人
+                </li>
+                <li>声优：松冈祯丞</li>
+                <li>年龄：14-16（SAO经历2年）</li>
+                <li>武器：黑剑·阐释者、白剑·逐暗者（SAO）；单手剑、圣剑）</li>
+                <li>称号：黑衣剑士、二刀流</li>
+                <li>名副其实的重度网络游戏玩家，拥有超群的反射神经和洞察力。因为完全潜行正式版的SAO而被卷入死亡游戏,并以此为开端，牵扯进各种的虚拟世界事件</li>
+            </ul>
+            
+        </div>
+          <div class="col-md-5" >
+            <p class="zp"></p>
+                    <img style="width: 100%;" src="img/%E5%90%8C%E4%BA%BA.jpg" alt="">
+   
+        </div>
+    </div>
+    
+    </div>
+</div>
+ <div class="row">
+        <div class="col-md-5" >
+            <p class="zp"></p>
+                    <img style="width: 100%;" src="img/%E4%BA%9A%E7%91%9F%E9%82%A3.jpg" alt="">
+   
+        </div>
+        <div class="col-md-7">
+           <br>
+           <br>
+            <ul style="width: 70%;margin: 0 auto;">
+              
+               
+                <li>
+                   亚丝娜/结城明日奈
+                </li>
+                <li>声优：户松遥</li>
+                <li>年龄：15-17（SAO经历2年）</li>
+                <li>武器：细剑·闪烁之光（SAO）；细剑、双手用法杖·世界树之杖（ALO）</li>
+                <li>称号：闪光、狂暴补师</li>
+                <li>SAO系统下拥有排名前五名美貌的美女玩家，实力之强可以担任最强公会「血盟骑士团」的副团长，在SAO中几乎是无人不晓的名人。</li>
+            </ul>
+            
+        </div>
+
+<div class="row">
+    
+    <div class="col-md-12">
+        <span>
+       
+            
+        </span>
+        <br><br>
+        <div class="row">
+        <div class="col-md-7">
+           <br>
+           <br>
+            <ul style="width: 70%;margin: 0 auto;">
+             <p class="zp"></p>
+                <li>
+                    克莱因/壶井辽太郎
+                </li>
+                <li>声优：平田广明</li>
+                <li>年龄：22-24（SAO经历2年）</li>
+                <li>桐人在SAO世界的第一个朋友，公会「风林火山」的会长。</li>
+                <li>拥有很强的统帅领导能力，只要他在的地方就会自动聚集同伴。独特技能为“太刀” 。曾帮助桐人单挑圣诞BOSS，并被托付与魂水晶（对10秒内死亡角色使用可以复活）去救助在眼前死掉的人。</li>
+                <li>攻略组合作完成第74层BOSS攻略，是第75层BOSS攻略中见证了桐人与茅场对决的其中一人。</li>
+            </ul>
+            
+        </div>
+          <div class="col-md-5" >
+           
+                    <img style="width: 100%;" src="img/%E8%8E%B1%E5%85%8B.jpg" alt="">
+   
+        </div>
+    </div>
+    
+    </div>
+</div>
+
+<div class="row">
+    
+    <div class="col-md-12">
+        <span>
+       
+            
+        </span>
+        <br><br>
+        <div class="row">
+             <div class="col-md-1" >
+           
+                    
+        </div>
+             <div class="col-md-5" >
+           
+                    <img style="width: 100%;" src="img/%E5%BA%8F%E5%88%97.jpg" alt="">
+   
+        </div>
+        <div class="col-md-6">
+           <br>
+           <br>
+            <ul style="width: 90%;margin: 0 auto;">
+             <p class="zp"></p>
+                <li>
+                  游戏介绍
+                </li>
+                <li>【发售日】2017年9月27日</li>
+                <li>【品番】完全生产限定版Blu-ray：ANZX-14001-2、完全生产限定版DVD：ANZB-14001-2、通常版Blu-ray：ANSX-14001、通常版DVD：ANSB-14001</li>
+                <li>【式样】本编DISC（Blu-ray Disc・DVD）1枚+特典CD 1枚</li>
+                <li>剧场版《刀剑神域 -序列之争-》 本编119min
+・PV・CM</li>
+                <li>・字幕（日本语、英语）</li>
+                <li>原作者：川原砾创作的短篇小说（插图：abec）</li>
+                <li>音频评论（出演：伊藤智彦、足立慎吾、川原砾、松冈祯丞、户松遥、神田沙也加</li>
+                <li>
+                    ・特典CD
+1.Ubiquitous dB -special ver.-
+                </li>
+            </ul>
+            
+        </div>
+     
+    </div>
+    
+    </div>
+</div>
+<!--     刀剑神域     -->
+     
+     
+     
+     
+     
+     
+     
+     
+     
+      <!--     资讯-->
+     <br><br> <br><br>
+     <div class="mo row ">
+          <br><br> <br><br>
+          <div class="col-md-12" style="">
+             <ul style="list-style: none;">
+              
+                 
+                <li style="position: absolute;right: 3%;"><a href="%E9%A6%96%E9%A1%B5.html">回到首页</a></li>
+            <li style="position: absolute;right: 10%;"><a href="#">导航</a></li>
+             </ul>
+             
+             
+             
+         </div>
+         
+         
+     </div>
+     
+     
+ </div>
+   </div>
+
+   
+   
+   
+   
+   
+   
+    
+    
+    
+    </div>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
+
 </html>

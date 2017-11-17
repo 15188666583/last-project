@@ -2,9 +2,388 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>进击的巨人</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>进击的巨人
+    </title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+    
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            
+        }
+        body{
+            
+         
+          
+        }
+        .cl1{
+            
+            width: 100%;
+            height: 100%;
+            
+        }
+    
+        .beijing1{
+            width: 100%;position: fixed;z-index: -1;
+        }
+         .beijing2{
+            width: 100%;display: none;position: absolute;z-index: -1;
+        }
+         .daohang1{
+            top: 40px;
+        }
+      
+             .sousuo{
+            
+            position: absolute;
+            left: 10%;
+            top:5px;
+        }
+        .zhu
+        {    
+            width: 75%;
+            height: 770%;
+            background-color:rgba(255,255,255,0.7);
+            margin: 0px auto;
+            
+     
+        }
+        .lunbo{
+            border-radius: 2%;
+            width: 100%;
+            margin: 0 auto;
+            
+            overflow: hidden;
+        }
+        .zhu ul{
+            list-style:inside;
+            color: black;font-weight: bold;
+        }
+        .zhu ul li{
+            text-indent: 2em;
+            line-height: 250%;
+        }
+        .zimg{
+            
+          width: 100%;border-radius:5%;
+     
+            
+        }
+        .zp{
+            margin: 1% auto;
+            text-align: center;
+            font-size: 1.5vw;
+            background-image: linear-gradient(to right, #dff,#acc2d9,#dff);
+            width: 90%;
+            height: 2px;
+            border-radius: 50%;
+            color: black;
+            font-family: sans-serif;
+              box-shadow:0 0 10px 10px rgba(255,255,255,0.5) inset;
+        }
+        .mo ul li{
+            float: left;
+            
+            
+        }
+        
+/*        媒体查询*/
+        @media screen and (max-width:700px){
+            .sousuo{
+            
+            position: absolute;
+            left: 0px;
+        }
+           
+            .daohang1{
+                top: 0px;
+            }
+             .daohang ul li{
+               margin: 50px;
+            }
+            .beijing1{
+                
+                display: none;
+                
+            }
+             .beijing2{
+            display: block;height: 80%;bottom: 0px;position: fixed;
+            }
+             
+               
+                
+            }
+            
+     
+        
+
+        /*        媒体查询*/
+           
+       
+    </style>
+    
 </head>
 <body>
+<!--整体界面-->
+<div class="cl1">
+<!--背景图片-->
+<div>
+<img class="beijing1" src="img/zutu1.jpg"; alt="" >
+<img class="beijing2" src="img/%E6%89%8B%E6%9C%BA%E8%83%8C%E6%99%AF.jpg"; alt="" >
+</div>
+
+ <!--顶部导航-->
+   <div class="navbar navbar-inverse daohang1" role="navigation" id="menu-nav" >
+       <div class="container">
+           <div class="navbar-header">
+               <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                  
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+                   <span class="icon-bar"></span>
+               </button>
+               <a href="%E9%A6%96%E9%A1%B5.html" style="color: white;" class="navbar-brand ">动漫专区</a>
+           </div>
+           <div class="navbar-collapse collapse">
+             <ul class="nav navbar-nav " >
+                 <li ><a href="%E9%A6%96%E9%A1%B5.html">漫展首页</a></li>
+                 
+                 <li class="dropdown">
+                   <a href="" class="dropdown-toggle" data-toggle="dropdown">动漫推荐<span class="caret"></span></a>
+                     <ul class="dropdown-menu" role="menu">
+                         <li><a href="%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC.html" data-tab="tab-chrome">东京食尸鬼</a></li>
+                     
+                         <li><a href="%E5%88%80%E5%89%91%E7%A5%9E%E5%9F%9F.html" data-tab="tab-safari">刀剑神域</a></li>
+                         <li><a href="%E5%85%A8%E8%81%8C%E9%AB%98%E6%89%8B.html" data-tab="tab-opera">全职高手</a></li>
+                             <li><a href="%E8%BF%9B%E5%87%BB%E7%9A%84%E5%B7%A8%E4%BA%BA.html" data-tab="tab-firefox">进击的巨人</a></li>
+                         
+                     </ul>
+                 </li>
+               <li ><a href="%E8%B5%84%E8%AE%AF%E5%8C%BA.html">资讯区</a></li>
+                 <li><a href="%E8%81%94%E7%B3%BB%E6%88%91.html">联系我</a></li>
+                 <li class="denglu"><a href="%E7%99%BB%E9%99%86.html">登陆</a></li>
+                 <li class="zhuce"><a href="%E6%B3%A8%E5%86%8C.html">注册</a></li>
+                 <li class="sousuo">  
+             <form class="form-inline" action="." method="POST">
+						
+						<div class="form-group ">
+							<input style="height: 40px;line-height: 40px;" type="email" name="email" placeholder="请输入搜索内容" class="form-control input-lg" required="" value="">
+							<button type="submit" class="btn btn-primary btn-lg" style="background-color: #222222;border: none;">搜索</button>
+						</div>
+						
+					</form>
+            </li>
+                 
+             </ul>
+           </div>
+       </div>
+   </div>
+<!--    模块-->
+<br><br><br>
+  <p class="zp">东京食尸鬼</p><br><br>
+ <div class="zhu">
+<!--     轮播图-->
+      <div id="carousel-example-generic" class="carousel slide lunbo " data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+          <li data-target="#carousel-example-generic" data-slide-to="3" class="active"></li>
+          
+        </ol>
+        <div class="carousel-inner" role="listbox">
+          <div class="item">
+            <a href="#"><img  alt="" src="img/%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC.jpg" data-holder-rendered="true"></a>
+          </div>
+          <div class="item">
+            <a href="#"><img  alt="" src="img/%E4%B8%9C%E4%BA%AC%E8%BD%AE1.jpg" data-holder-rendered="true"></a>
+          </div>
+           <div class="item">
+            <a href="#"><img  alt="" src="img/%E4%B8%9C%E4%BA%AC%E8%BD%AE2.jpg" data-holder-rendered="true"></a>
+          </div>
+            <div class="item">
+            <a href="#"><img  alt="" src="img/%E4%B8%9C%E4%BA%AC%E8%BD%AE3.jpg" data-holder-rendered="true"></a>
+          </div>
+          <div class="item active">
+            <a href="#"><img  alt="" src="img/%E4%B8%9C%E4%BA%AC%E8%BD%AE4.jpg" data-holder-rendered="true"></a>
+          </div>
+       
+          
+          
+        </div>
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+          <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+          <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        
+        </a>
+      </div>
+     <!--     轮播图-->
+     <br>
+     
+    <!--     资讯-->
     
+    <!--        东京食尸鬼-->
+    
+     <div class="lie1 row">
+    <p class="zp">东京食尸鬼</p><br><br>
+         <div class=" col-md-6" style="border-radius: : 50%;">
+           
+            <img class="zimg"  src="img/%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC.jpg" alt="">
+        
+   
+         </div>
+         <div class="col-md-6"style="border: 50%;">
+             <ul >
+                 <li> 【科技讯】9月26日消息，东京食尸鬼第三季出不出，东京食尸鬼第三季分析。东京食尸鬼第三季相信很多人都在期待吧，毕竟之前一直有东京食尸鬼第三季的消息出现，就让我们来一起了解一下东京食尸鬼第三季的详情吧。</li>
+                    <li>
+                          东京食尸鬼第二季完结已经有一段时间了，想必大家对第三季都有了期望了吧，然而第三季迟迟没有消息，让吃瓜群众焦急万分，早前关于东京食尸鬼各种报道中有关第三季的剧透消息，这些消息到底是真是假东京食尸鬼第三季为什么还没有播出。
+                    </li>
+                    <li>
+                         东京食尸鬼第三季剧情是真的! 神秘喰种组织，一直在致力于调节人类与喰种的关系。来自于24区。曾芳村功善隶属于此组织对于青桐树破坏人类与喰种平衡的行为十分恼火，一直想除掉青铜树首领。
+                        
+                    </li>
+            </ul>
+         </div>
+          </div>
+          
+           <br>
+           <br>
+            <div class="lie1 row">
+          <div class="col-md-6"style="border: 50%;">
+            
+                <ul>
+                   
+                    <li>
+                         成员疑似均为喰种中的贵族，拥有近着惊人的财力。经常从事购买，诱拐，饲养人类的活动。也在暗地里组织举行虐杀人类，虐待人类的变态表演。
+                    </li>
+                    <li> 东京食尸鬼第三季剧情是真的! 指的是月山家族。是在数十年前靠着探险起家的喰种家族，如今拥有着惊人的财力，并且在日本财政界混得风生水起。</li>
+                    <li>拥有大量喰种仆人。全称“CommissionofCounterGhoul”，是由人类依据“喰种对策法”组成的驱逐、制裁和研究喰种的国家组织(也收养双亲遭到喰种杀害的孤儿)，是喰种搜查官们的聚集地，在东京各个区域都设有支部。</li>
+                </ul>
+                 </div>
+                 <div class="col-md-6">
+                <img class="zimg" src="img/%E4%B8%9C%E4%BA%AC%E9%A3%9F%E5%B0%B8%E9%AC%BC2.jpg" alt="">
+                 </div>
+            </div>
+            
+         
+            
+<!--            东京食尸鬼-->
+<br><br>
+
+     <br>
+<!--     刀剑神域-->
+<div class="row">
+    <p class="zp"></p><br><br>
+    <div class="col-md-12">
+        <span>
+           
+            
+        </span>
+        <br><br>
+        <div class="row">
+        <div class="col-md-7">
+           <br>
+           <br>
+            <ul style="width: 70%;margin: 0 auto;">
+               <li>主角介绍：</li>
+                <li>
+                   名称: 金木研
+                </li>
+                <li>外号: 蜈蚣/眼罩</li>
+                <li>喰种等级: SS级）</li>
+                <li>赫子: 鳞赫(半赫者)</li>
+                <li>攻击力: 9。得到“库因克”破坏者的称号管你是甲赫还是新型，通通砍了!(CCG的最近研究“新田”，一个被当成金木的甜点,一个被秒掉右手....)</li>
+                <li>再生力: 8。鳞赫的优点之一，而金木的再生力也曾被壁虎称赞。脚扭转了就扭回来，骨头跑出来了就放回去，肚子破了个洞完全不用管他...</li>
+            </ul>
+            
+        </div>
+          <div class="col-md-5" >
+           
+                    <img style="width: 100%;" src="img/%E9%87%91%E6%9C%A8%E7%A0%94.jpg" alt="">
+   
+        </div>
+    </div>
+    
+    </div>
+</div>
+ <div class="row">
+        <div class="col-md-5" >
+           
+                    <img style="width: 100%;" src="img/%E8%99%8E%E9%B2%B8.jpg" alt="">
+   
+        </div>
+        <div class="col-md-7">
+           <br>
+           <br>
+            <ul style="width: 70%;margin: 0 auto;">
+               <li>主角介绍：</li>
+                <li>
+                  名称: 神代叉荣
+                </li>
+                <li>外号: 虎鲸</li>
+                <li>喰种等级: SS级</li>
+                <li>赫子: 尾赫</li>
+                <li>攻击力: 至高无上的10。攻击强得像炸弹爆炸一样(详情请看第二次金木vs虎鲸)，应该没人反对吧...</li>
+                <li>防御力: 7。虽然也能用尾赫防御，他好像更喜欢用身体硬吃攻击...不过话又说回来，受到金木的猛烈攻击，也未能对他的身体造成太大的损害，所以给他一个比得上甲赫的7。</li>
+            </ul>
+            
+        </div>
+
+
+
+<!--     刀剑神域     -->
+     
+     
+     
+     
+     
+     
+     
+     
+     
+      <!--     资讯-->
+     <br><br> <br><br>
+     <div class="mo row ">
+          <br><br> <br><br>
+          <div class="col-md-12" style="">
+             <ul style="list-style: none;">
+              
+                 
+                <li style="position: absolute;right: 3%;"><a href="%E9%A6%96%E9%A1%B5.html">回到首页</a></li>
+            <li style="position: absolute;right: 10%;"><a href="#">导航</a></li>
+             </ul>
+             
+             
+             
+         </div>
+         
+         
+     </div>
+     
+     
+ </div>
+   </div>
+
+   
+   
+   
+   
+   
+   
+    
+    
+    
+    </div>
+    <script src="js/jquery-1.11.1.js"></script>
+    <script src="js/bootstrap.js"></script>
 </body>
+
 </html>
